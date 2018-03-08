@@ -9,12 +9,10 @@ const restaurantSchema = mongoose.Schema({
   cuisine: {type: String, required: true},
   address: {
     building: String,
-    // coord will be an array of string values
     coord: [String],
     street: String,
     zipcode: String
   },
-  // grades will be an array of objects
   grades: [{
     date: Date,
     grade: String,
